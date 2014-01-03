@@ -1,0 +1,9 @@
+#sidebar {
+  padding: 1em;
+  height: 100%;
+  background-color: #ddd;
+}
+
+#main-content {
+  padding: 1em;
+}
