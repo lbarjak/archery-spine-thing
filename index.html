@@ -4,22 +4,22 @@
   <link href="/css/style.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js" type="text/javascript"></script>
   <script src="/js/app.js" type="text/javascript"></script>
-  <title>archery spine measurement</title>
+  <title>Archery Spine Measurement</title>
 </head>
 <body ng-app="archeryApp">
   <div class="pure-g">
     <div id="main-content" class="pure-u-1-2">
-      <h3>other stuff</h3>
-      <p>look at this artsy picture of arrows, whoop whoop</p>
+      <h24>Oh look, an artsy photo of arrows.</h24>
       <p><img src="/img/arrows.jpg" width="300"></p>
-      <h2>stuff</h2>
+      <h2>Spine Calculator</h2>
       <form ng-controller="formCtrl" class="pure-form pure-form-stacked">
-        <input placeholder="thing" type="text">
-        <input placeholder="stuff" type="text">
-        <input placeholder="other" type="text">
-        <button ng-click="testFn()" class="pure-button pure-button-primary">does something...</button>
+        <input placeholder="draw length" ng-model="draw" type="text">
+        <input placeholder="bow poundage" ng-model="pound" type="text">
+        <input placeholder="point weight (grains)" ng-model="point" type="text">
+        <button ng-click="calculate()" class="pure-button pure-button-primary">Calculate</button>
+        <button ng-click="clear()" class="pure-button pure-button-primary">Clear</button>
+        <p ng-show="deflection != null">arrow deflection: {{deflection}}</p>
       </form>
-      <p>trying real hard over here</p>
     </div>
   </div>
 </body>
