@@ -7,10 +7,15 @@
   <title>Archery Spine Measurement</title>
 </head>
 <body ng-app="archeryApp">
+  <div id="header" class="pure-g">
+    <div id="header1" class="pure-u-1-5">&nbsp;</div>
+    <div id="header2" class="pure-u-1-5">&nbsp;</div>
+    <div id="header3" class="pure-u-1-5">&nbsp;</div>
+    <div id="header4" class="pure-u-1-5">&nbsp;</div>
+    <div id="header5" class="pure-u-1-5">&nbsp;</div>
+  </div>
   <div class="pure-g">
-    <div id="main-content" class="pure-u-1-2">
-      <h24>Oh look, an artsy photo of arrows.</h24>
-      <p><img src="/img/arrows.jpg" width="300"></p>
+    <div id="main-content" class="pure-u">
       <h2>Spine Calculator</h2>
       <form ng-controller="formCtrl" class="pure-form pure-form-stacked">
         <input placeholder="draw length" ng-model="draw" type="text">

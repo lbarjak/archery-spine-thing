@@ -1,4 +1,45 @@
+body {
+    color: #444;
+    background: #eee;
+}
+
 #main-content {
-  padding: 1em;
   margin: auto;
+  margin-top: 100px;
+}
+
+/* archery target banner header */
+#header div {
+    border-bottom: 1px solid #ccc;
+    height: 25px;
+    opacity: 0.85;
+}
+
+#header1 {
+    background-color: white;
+}
+
+#header2 {
+    background-color: black;
+}
+
+#header3 {
+    background-color: #48b6c7;
+}
+
+#header4 {
+    background-color: #db402a;
+}
+
+#header5 {
+    background-color: #e1c74e;
+}
+/* overrides */
+.pure-g > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.l-box {
+    padding: 1em;
 }

@@ -8,11 +8,14 @@ head
     title Archery Spine Measurement
 
 body(ng-app='archeryApp')
+    div#header.pure-g
+        div#header1.pure-u-1-5 &nbsp;
+        div#header2.pure-u-1-5 &nbsp;
+        div#header3.pure-u-1-5 &nbsp;
+        div#header4.pure-u-1-5 &nbsp;
+        div#header5.pure-u-1-5 &nbsp;
     div.pure-g
-        div#main-content.pure-u-1-2
-            h24 Oh look, an artsy photo of arrows.
-            p 
-                img(src="/img/arrows.jpg" width='300')
+        div#main-content.pure-u
             h2 Spine Calculator
             form.pure-form.pure-form-stacked(ng-controller='formCtrl')
                 input(placeholder='draw length' ng-model='draw' type='text')
