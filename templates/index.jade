@@ -9,20 +9,16 @@ head
 
 body(ng-app='archeryApp')
     div.pure-g
-        div#sidebar.pure-u-1-4
-            h3 don't really care what goes here...
-
         div#main-content.pure-u-1-2
             h3 other stuff
-            p look at this artsy picture of arrows, whoopw hoop
+            p look at this artsy picture of arrows, whoop whoop
             p 
                 img(src="/img/arrows.jpg" width='300')
-
             h2 stuff
-            form.pure-form.pure-form-stacked(ng-ctrl)
+            form.pure-form.pure-form-stacked(ng-controller='formCtrl')
                 input(placeholder='thing' type='text')
                 input(placeholder='stuff' type='text')
                 input(placeholder='other' type='text')
-                button.pure-button.pure-button-primary does nothing
+                button.pure-button.pure-button-primary(ng-click='testFn()') does something...
 
             p trying real hard over here

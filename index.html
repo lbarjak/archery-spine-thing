@@ -8,19 +8,16 @@
 </head>
 <body ng-app="archeryApp">
   <div class="pure-g">
-    <div id="sidebar" class="pure-u-1-4">
-      <h3>don't really care what goes here...</h3>
-    </div>
     <div id="main-content" class="pure-u-1-2">
       <h3>other stuff</h3>
-      <p>look at this artsy picture of arrows, whoopw hoop</p>
+      <p>look at this artsy picture of arrows, whoop whoop</p>
       <p><img src="/img/arrows.jpg" width="300"></p>
       <h2>stuff</h2>
-      <form ng-ctrl class="pure-form pure-form-stacked">
+      <form ng-controller="formCtrl" class="pure-form pure-form-stacked">
         <input placeholder="thing" type="text">
         <input placeholder="stuff" type="text">
         <input placeholder="other" type="text">
-        <button class="pure-button pure-button-primary">does nothing</button>
+        <button ng-click="testFn()" class="pure-button pure-button-primary">does something...</button>
       </form>
       <p>trying real hard over here</p>
     </div>
